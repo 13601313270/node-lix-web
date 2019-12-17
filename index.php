@@ -27,7 +27,12 @@ if(empty(!$result)){
     $_SERVER["PHP_SELF"]=$new["path"];
     unset($new);
     chdir("./src/");
-    if(substr($_SERVER["SCRIPT_FILENAME"],strlen($_SERVER["SCRIPT_FILENAME"]))){
+    if (substr($result[1], -4) === '.tpl') {
+        $page = new kod_web_page();
+        $page->fetch("." . $result[1]);
+        exit;
+    }
+    else if(substr($_SERVER["SCRIPT_FILENAME"],strlen($_SERVER["SCRIPT_FILENAME"]))){
         include_once($_SERVER["SCRIPT_FILENAME"]."index.php");
     }
     else{

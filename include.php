@@ -1,5 +1,5 @@
 <?php
-
+require 'vendor/autoload.php';
 ini_set('display_errors',1);
 error_reporting(E_ALL^E_NOTICE);
 date_default_timezone_set('PRC');
@@ -11,6 +11,9 @@ define("KOD_MYSQL_PASSWORD",'*****');
 define("KOD_COMMENT_MYSQLDB",'test');
 define("KOD_MEMCACHE_OPEN",true);
 define("KOD_MEMCACHE_TYPE",KOD_MEMCACHE_TYPE_MEMCACHED);
+define("KOD_SMARTY_CSS_DIR", dirname(__FILE__) . '/style_cache/');
+define("KOD_SMARTY_PLUT_PATH", dirname(__FILE__) . '/smarty_plugin/');
+define("KOD_SMARTY_CSS_HOST", '/style/');
 define("KOD_MEMCACHE_HOST","localhost");
 define("KOD_MEMCACHE_PORT","11211");
 include_once(dirname(__FILE__).'/kod/include.php');
