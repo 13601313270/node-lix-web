@@ -20,7 +20,7 @@ git clone git@github.com:13601313270/metaPHP.git
 ```
 拉完两个框架之后的目录
 
-![image](https://upload-images.jianshu.io/upload_images/8105934-2b0e749b1333e37a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](https://www-kodphp-cn.oss-cn-beijing.aliyuncs.com/8105934-2b0e749b1333e37a.png)
 
 ### 执行初始化命令
 ```shell
@@ -29,7 +29,8 @@ php kod/build/projectInit.php
 根据引导，系统获取一些关键配置信息，之后就能生成整个项目目录
 这些配置有，数据库地址、账号、密码，默认库，还有几个缓存文件夹路径配置
 
-![image](https://upload-images.jianshu.io/upload_images/8105934-1ae8142077c95670.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](
+https://www-kodphp-cn.oss-cn-beijing.aliyuncs.com/8105934-1ae8142077c95670.png)
 
 我们推荐缓存文件夹直接回车，设置默认值
 ### 服务器配置
@@ -53,4 +54,4 @@ chmod 777 smarty_cache/
 ```
 
 这时候，你再次刷新页面，就会有这样的显示。就证明初始化工作已经完成。
-![image](https://upload-images.jianshu.io/upload_images/8105934-c1616ab87bf5ef1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](https://www-kodphp-cn.oss-cn-beijing.aliyuncs.com/8105934-c1616ab87bf5ef1e.png)

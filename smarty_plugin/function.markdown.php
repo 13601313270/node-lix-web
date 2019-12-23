@@ -15,6 +15,8 @@ class newMark extends Markdown
             return $this->hashPart("<code class='sql_code'>" . substr($code, 4) . "</code>");
         } elseif (substr($code, 0, 6) === "shell\n") {
             return $this->hashPart("<code class='shell_code'>" . substr($code, 6) . "</code>");
+        } elseif (substr($code, 0, 6) === "html\n") {
+            return $this->hashPart("<code class='html'>" . substr($code, 5) . "</code>");
         } else {
             return $this->hashPart("<code>" . preg_replace('/^\n/', '', $code) . "</code>");
         }

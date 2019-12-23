@@ -15,7 +15,7 @@
     <div class="container">
         <img class="icon"
              src="http://yingshijiaoyuimg.oss-cn-beijing.aliyuncs.com/56363204ba30dc796b23658faee951c8.png">
-        <div>kod</div>
+        <div style="color: #986847;font-size: 28px;padding-left: 10px;">kod</div>
         <div class="links" style="flex-grow: 1;display: flex;justify-content: flex-end;">
             <a href="https://github.com/13601313270/kod" target="_blank">kod源码</a>
             <a href="https://github.com/13601313270/kodphp_web" target="_blank">此网站源码</a>
@@ -117,13 +117,11 @@
         margin: 0 auto;
     }
 </style>
-<style>
+<style lang="less">
     code {
         background: #4f4f4f;
         color: #eaeaea;
         position: relative;
-        white-space: inherit;
-        white-space: pre;
         vertical-align: unset;
         font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
         font-size: 1em;
@@ -137,6 +135,15 @@
         margin: 0 3px;
         border-radius: 5px;
         overflow-x: auto;
+        .key_words {
+            color: #cc7832;
+        }
+        .class_property {
+            color: #9876aa;
+        }
+        .variable {
+            color: #9876aa;
+        }
     }
 
     .php_code {
@@ -155,15 +162,11 @@
         margin: 5px 0;
     }
 
-    code .key_words {
-        color: #cc7832;
-    }
-
-    code .class_property {
-        color: #9876aa;
-    }
-
     code .class_property_call {
+        color: #ffc66d;
+    }
+
+    code .function_declara {
         color: #ffc66d;
     }
 
@@ -173,6 +176,10 @@
 
     code .string {
         color: #6ab759;
+    }
+
+    code .number {
+        color: #6897bb;
     }
 
     .right_content h1 {
