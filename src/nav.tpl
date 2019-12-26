@@ -6,7 +6,7 @@
     <a href="/dispatch.html">模板渲染</a>
     <a href="/mongodb.html">mongodb</a>
     <a href="/memcached.html">memcache</a>
-    <a>热更新</a>
-    <a>metaPHP</a>
+    {*<a>热更新</a>*}
+    {*<a>metaPHP</a>*}
     {*<a>console.log</a>*}
 </div>

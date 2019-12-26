@@ -24,21 +24,9 @@ echo kod_db_memcache::returnCacheOrSave('test',function() use($data){
 如果没有缓存，则进入绑定函数，运行的返回值进行缓存
 
 ##自增服务
+`kod_db_memcache::adding(key,step,callback,callStep)`
+
 ```php
-public static function adding($key,$numAdd,$function,$step=0){
-	$value = kod_db_memcache::get($key);
-	if($value==false){
-		kod_db_memcache::set($key,$numAdd);
-	}else{
-		kod_db_memcache::increment($key,$numAdd);
-	}
-	$value = kod_db_memcache::get($key);
-	if($step && $value%$step==0){
-		$function($value);
-		kod_db_memcache::set($key,0);
-	}
-	return $value;
-}
 //demo
 $liuxueApi = new liuxueNews();
 $articleInfo = $liuxueApi->getByKey($articleId);
@@ -49,4 +37,6 @@ $articlePv = kod_db_memcache::adding('articlePv:'.$articleId,1,function($val) us
 	));
 },10);
 ```
+上面这个demo，是对每一个文章进行pv统计，每次+1，每10次，执行一次存库操作
+
 

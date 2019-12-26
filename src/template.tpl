@@ -17,6 +17,7 @@
         <img class="icon"
              src="http://yingshijiaoyuimg.oss-cn-beijing.aliyuncs.com/56363204ba30dc796b23658faee951c8.png">
         <div style="color: #986847;font-size: 28px;padding-left: 10px;">kod</div>
+        <div style="color: #986847;font-size: 20px;margin-left:122px;padding-left: 10px;">快速，轻量的php接口开发框架</div>
         <div class="links" style="flex-grow: 1;display: flex;justify-content: flex-end;">
             <a href="https://github.com/13601313270/kod" target="_blank">kod源码</a>
             <a href="https://github.com/13601313270/kodphp_web" target="_blank">此网站源码</a>
@@ -48,7 +49,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background: white;
+        background: rgba(255, 255, 255, 0.95);
         z-index: 9999;
     }
 

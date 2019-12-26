@@ -41,9 +41,9 @@ fetch也是一个step，参数是一个tpl地址。
 
 开通这样的功能很简单，只要在根目录include.php文件设置两个全局参数
 
-KOD\_SMARTY\_CSS\_DIR   系统自动提取生成的css文件的存储路径（需要设置可写权限）
+`KOD_SMARTY_CSS_DIR`   系统自动提取生成的css文件的存储路径（需要设置可写权限）
 
-KOD\_SMARTY\_CSS\_HOST  加载这个css文件的域名和路径（KOD\_SMARTY\_CSS\_DIR文件夹里的文件，只有服务器做了rewrite，指定访问路径才可以被浏览器访问）
+`KOD_SMARTY_CSS_HOST`  加载这个css文件的域名和路径（KOD\_SMARTY\_CSS\_DIR文件夹里的文件，只有服务器做了rewrite，指定访问路径才可以被浏览器访问）
 （有时候网站需要单独的css域名，比如马蜂窝的就是css.mafengwo.net）
 
 比如本网站的配置如下
