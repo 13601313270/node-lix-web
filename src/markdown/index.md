@@ -55,3 +55,44 @@ chmod 777 smarty_cache/
 
 这时候，你再次刷新页面，就会有这样的显示。就证明初始化工作已经完成。
 ![image](https://www-kodphp-cn.oss-cn-beijing.aliyuncs.com/8105934-c1616ab87bf5ef1e.png)
+
+#目录结构
+代码生成完成后，整个目录结构如下
+<table>
+    <thead>
+        <tr>
+            <td>目录</td>
+            <td>内容</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/src/</td>
+            <td>业务代码(mvc里的c和v，c和v成对出现)</td>
+        </tr>
+        <tr>
+            <td>/include/</td>
+            <td>mysql、mongodb等model类</td>
+        </tr>
+        <tr>
+            <td>/kod/</td>
+            <td>kod框架源码</td>
+        </tr>
+        <tr>
+            <td>/metaPHP/</td>
+            <td>metaPHP源码，用于一些代码自动生成</td>
+        </tr>
+        <tr>
+            <td>/index.php</td>
+            <td>入口文件，所有页面url的唯一入口</td>
+        </tr>
+        <tr>
+            <td>/include.php</td>
+            <td>系统配置信息，和自动加载策略函数</td>
+        </tr>
+        <tr>
+            <td>/rewrite.conf</td>
+            <td>路由重定向配置</td>
+        </tr>
+    </tbody>
+</table>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="https://www-kodphp-cn.oss-cn-beijing.aliyuncs.com/bitbug_favicon.ico">
     {if !empty($__kodStepTdk__)}
         <title>{$__kodStepTdk__.title}</title>
         <meta name="keywords" content="{$__kodStepTdk__.keywords}"/>
@@ -145,6 +146,16 @@
             color: #9876aa;
         }
     }
+    table {
+        border-spacing: 0;
+        border-top: solid 1px #c5c5c5;
+        border-left: solid 1px #c5c5c5;
+        tr td {
+            border-bottom: solid 1px #c5c5c5;
+            border-right: solid 1px #c5c5c5;
+            padding: 5px;
+        }
+    }
 
     .php_code {
         background: #1f1f1f;
@@ -180,6 +191,11 @@
 
     code .number {
         color: #6897bb;
+    }
+    .right_content {
+        img {
+            max-width: 100%;
+        }
     }
 
     .right_content h1 {

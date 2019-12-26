@@ -2,6 +2,7 @@ memcache方法在网址  http://php.net/manual/zh/book.memcache.php  中查看
 
 快速调取释放类型，每一次都链接，并且断开
 
+## 读取
 ```php
 kod_db_memcache::set('test',array(
 	'obej'=>1,
@@ -13,12 +14,14 @@ kod_db_memcache::set('test',array(
 print_r(kod_db_memcache::get('test'));
 ```
 
+## 锁请求
 ```php
 $data = 'hehe';
 echo kod_db_memcache::returnCacheOrSave('test',function() use($data){
 	return $data;
 },0,10);
 ```
+如果没有缓存，则进入绑定函数，运行的返回值进行缓存
 
 ##自增服务
 ```php

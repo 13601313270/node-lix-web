@@ -7,10 +7,14 @@
 
 ```php
 class user extends kod_db_mysqlTable {
-    protected $dbName = 'content';	//数据库
-    protected $tableName = 'user';	//数据表
-    protected $key = 'id';		//主键(设置的话可以提供一些快捷方法)
-    protected $keyDataType = 'int';	//主键数据类型(主键的数据类型int varchar)
+    //数据库
+    protected $dbName = 'content';
+    //数据表
+    protected $tableName = 'user';
+    //主键(设置的话可以提供一些快捷方法)
+    protected $key = 'id';
+    // 主键数据类型(主键的数据类型int varchar)
+    protected $keyDataType = 'int';
 }
 ```
 
@@ -61,15 +65,16 @@ user::create()
 如果条件之间有复杂的or和and逻辑，可以这样设置
 ```php
 user::create()->where(
-kod_and(
-array('status' => 1),
-kod_or(
-array(
-'name'       => 'whr',
-'alias_name' => 'whr',
-)
-)
-)
+    kod_and(
+        array('status' => 1),
+        kod_or(
+            array(
+                'name'       => 'whr',
+                'alias_name' => 'whr',
+                'type'       => 1
+            )
+        )
+    )
 )
 //where status=1 and (name='whr' or alias_name='whr')
 ```
