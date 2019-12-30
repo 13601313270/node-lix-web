@@ -3,6 +3,7 @@
 use Michelf\Markdown;
 
 include '../metaPHP/include.php';//引入metaPHP
+use metaPHP\phpInterpreter;
 
 class newMark extends Markdown
 {
