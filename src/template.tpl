@@ -16,11 +16,10 @@
     <div class="container">
         <img class="icon"
              src="http://yingshijiaoyuimg.oss-cn-beijing.aliyuncs.com/56363204ba30dc796b23658faee951c8.png">
-        <div style="color: #986847;font-size: 28px;padding-left: 10px;">kod</div>
+        <div style="color: #986847;font-size: 28px;padding-left: 10px;">Lix</div>
         <div style="color: #986847;font-size: 20px;margin-left:122px;padding-left: 10px;">快速，轻量的php接口开发框架</div>
         <div class="links" style="flex-grow: 1;display: flex;justify-content: flex-end;">
-            <a href="https://github.com/13601313270/kod" target="_blank">kod源码</a>
-            <a href="https://github.com/13601313270/kodphp_web" target="_blank">此网站源码</a>
+            <a href="https://github.com/13601313270/node-lix" target="_blank">Lix源码</a>
         </div>
     </div>
 </div>
@@ -137,25 +136,32 @@
         margin: 0 3px;
         border-radius: 5px;
         overflow-x: auto;
-        .key_words {
-            color: #cc7832;
-        }
-        .class_property {
-            color: #9876aa;
-        }
-        .variable {
-            color: #9876aa;
-        }
+        display: block;
+
+    .key_words {
+        color: #cc7832;
+    }
+
+    .class_property {
+        color: #9876aa;
+    }
+
+    .variable {
+        color: #9876aa;
+    }
+
     }
     table {
         border-spacing: 0;
         border-top: solid 1px #c5c5c5;
         border-left: solid 1px #c5c5c5;
-        tr td {
-            border-bottom: solid 1px #c5c5c5;
-            border-right: solid 1px #c5c5c5;
-            padding: 5px;
-        }
+
+    tr td {
+        border-bottom: solid 1px #c5c5c5;
+        border-right: solid 1px #c5c5c5;
+        padding: 5px;
+    }
+
     }
 
     .php_code {
@@ -193,10 +199,13 @@
     code .number {
         color: #6897bb;
     }
+
     .right_content {
-        img {
-            max-width: 100%;
-        }
+
+    img {
+        max-width: 100%;
+    }
+
     }
 
     .right_content h1 {

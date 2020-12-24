@@ -5,7 +5,7 @@
       <paths name="120.27.14.158">
         <serverdata>
           <mappings>
-            <mapping deploy="/var/www/kodphp" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/var/www/node-lix" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
